@@ -38,7 +38,7 @@ const Ocean: React.FC = () => {
         geometry.setAttribute("position", new THREE.Float32BufferAttribute(points, 3));
 
         const pointCloud = new THREE.Points(geometry, material);
-        pointCloud.visible = false;
+        // pointCloud.visible = false;
         scene.add(pointCloud);
 
         function updateLines() {
