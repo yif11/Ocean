@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import * as THREE from "three";
+import Fish from "./Fish";
 
 const Ocean: React.FC = () => {
     const mountRef = useRef<HTMLDivElement>(null);
@@ -100,6 +101,7 @@ const Ocean: React.FC = () => {
     return (
         <div>
             <div ref={mountRef} />
+            <Fish scene={scene} />
         </div>
     );
 };
